@@ -1,108 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Decentralised Crowdfunding DApp — Create, fund, and manage campaigns on the Ethereum blockchain.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CrowdFund — Decentralised crowdfunding DApp on Ethereum. Create, fund, and manage campaigns with MetaMask." />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <title>CrowdFund — Decentralised Crowdfunding</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- ─── Header / Navbar ──────────────────────── -->
-    <header id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-icon">◈</span>
-                <span class="logo-text">CrowdFund</span>
-            </div>
-            <nav>
-                <a href="#dashboard" class="nav-link active">Dashboard</a>
-                <a href="#create" class="nav-link">Create</a>
-                <a href="#campaigns" class="nav-link">Campaigns</a>
-            </nav>
-            <button id="connectWallet" class="btn btn-connect">
-                <span class="btn-icon">🦊</span>
-                <span class="btn-text">Connect Wallet</span>
-            </button>
-        </div>
-    </header>
-
-    <!-- ─── Hero / Stats Section ─────────────────── -->
-    <main>
-        <section id="dashboard" class="section hero-section">
-            <div class="hero-content">
-                <h1>Decentralised <span class="gradient-text">Crowdfunding</span></h1>
-                <p class="subtitle">Create campaigns, fund ideas, and manage your contributions — all on-chain, trustless, and transparent.</p>
-            </div>
-            <div class="stats-grid" id="statsGrid">
-                <div class="stat-card">
-                    <div class="stat-value" id="statCampaigns">0</div>
-                    <div class="stat-label">Total Campaigns</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="statBalance">0 ETH</div>
-                    <div class="stat-label">Your Balance</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="statNetwork">—</div>
-                    <div class="stat-label">Network</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value" id="statAddress">—</div>
-                    <div class="stat-label">Connected Address</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ─── Create Campaign Section ──────────── -->
-        <section id="create" class="section">
-            <h2 class="section-title">Create a <span class="gradient-text">Campaign</span></h2>
-            <div class="form-card" id="createForm">
-                <div class="form-group">
-                    <label for="goalInput">Funding Goal (ETH)</label>
-                    <input type="number" id="goalInput" placeholder="e.g. 10" step="0.01" min="0.001">
-                </div>
-                <div class="form-group">
-                    <label for="durationInput">Duration (days)</label>
-                    <input type="number" id="durationInput" placeholder="e.g. 30" min="1">
-                </div>
-                <div class="form-group">
-                    <label for="ipfsCidInput">IPFS CID (metadata hash)</label>
-                    <input type="text" id="ipfsCidInput" placeholder="Qm... or paste any 32-byte hex">
-                </div>
-                <button id="createCampaignBtn" class="btn btn-primary btn-full">
-                    <span>Create Campaign</span>
-                </button>
-                <div id="createStatus" class="status-message hidden"></div>
-            </div>
-        </section>
-
-        <!-- ─── Campaign Listing Section ─────────── -->
-        <section id="campaigns" class="section">
-            <h2 class="section-title">Active <span class="gradient-text">Campaigns</span></h2>
-            <button id="refreshCampaigns" class="btn btn-secondary">⟳ Refresh</button>
-            <div id="campaignGrid" class="campaign-grid">
-                <div class="empty-state" id="emptyState">
-                    <div class="empty-icon">📭</div>
-                    <p>No campaigns yet. Be the first to create one!</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- ─── Notification Toast ───────────────────── -->
-    <div id="toast" class="toast hidden">
-        <span id="toastMessage"></span>
-    </div>
-
-    <!-- ─── Footer ───────────────────────────────── -->
-    <footer>
-        <p>CrowdFund DApp &copy; 2026 — Built on Ethereum | <a href="https://github.com" target="_blank">GitHub</a></p>
-    </footer>
-
-    <script src="app.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

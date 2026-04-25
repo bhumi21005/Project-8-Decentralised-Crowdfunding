@@ -10,8 +10,12 @@ out/
 # Docs
 docs/
 
-# Dotenv file
+# Dotenv files
 .env
+frontend/.env
+
+# Local campaign metadata (user data)
+frontend/metadata/
 
 # IDE files
 .vscode/
@@ -25,3 +29,9 @@ Thumbs.db
 
 # Helper scripts
 run.sh
+
+# Frontend build output
+frontend/dist/
+
+# Vercel
+.vercel/
