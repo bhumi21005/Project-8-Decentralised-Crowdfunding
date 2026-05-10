@@ -200,7 +200,7 @@ Target: **≥ 70% line coverage**
 
 ## Gas Optimisation
 
-See [gas-report.md](gas-report.md) for detailed before/after analysis.
+See [gas-report.md](reports/gas-report.md) for detailed before/after analysis.
 
 Key optimisations applied:
 1. **Custom errors** instead of `require()` with string messages (~200 gas saved per revert)
