@@ -15,8 +15,6 @@ A decentralised crowdfunding platform built on Ethereum using Solidity smart con
 |Kumkum Kushwaha | 240004028|
 
 
-> **Note:** Replace the placeholder roll number above with actual values.
-
 ---
 
 ## Architecture — On-Chain vs Off-Chain Data
