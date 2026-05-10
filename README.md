@@ -8,10 +8,11 @@ A decentralised crowdfunding platform built on Ethereum using Solidity smart con
 
 | Name    | Roll Number |
 | ------- | ----------- |
-| Prajwal | _ROLL_NUM_  |
+| Prajwal | 240004033 |
 |Bhumika Kumari | 240051006|
 |Shruti Turare | 240008029|
-
+|Malothu Haritha | 240001042|
+|Kumkum Kushwaha | 240004028|
 
 
 > **Note:** Replace the placeholder roll number above with actual values.
