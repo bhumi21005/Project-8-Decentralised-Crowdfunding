@@ -13,7 +13,7 @@ A decentralised crowdfunding platform built on Ethereum using Solidity smart con
 |Shruti Turare | 240008029|
 |Malothu Haritha | 240001042|
 |Kumkum Kushwaha | 240004028|
-
+|Apoorva Dinesh Chipte | 240021003|
 
 ---
 
