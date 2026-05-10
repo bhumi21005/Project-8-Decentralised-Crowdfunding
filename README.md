@@ -8,7 +8,7 @@ A decentralised crowdfunding platform built on Ethereum using Solidity smart con
 
 | Name    | Roll Number |
 | ------- | ----------- |
-| Prajwal | 240004033 |
+| Mhaske Prajwal Sanjay | 240004033 |
 |Bhumika Kumari | 240051006|
 |Shruti Turare | 240008029|
 |Malothu Haritha | 240001042|
