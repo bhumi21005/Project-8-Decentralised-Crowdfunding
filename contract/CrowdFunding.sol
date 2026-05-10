@@ -4,7 +4,6 @@ pragma solidity ^0.8.24;
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
 /// @title CrowdFunding — A decentralised crowdfunding platform
-/// @author Prajwal
 /// @notice Create campaigns, contribute ETH, withdraw on success, or refund on failure.
 /// @dev Uses OpenZeppelin ReentrancyGuard. Campaign descriptions are stored off-chain via IPFS CIDs.
 contract CrowdFunding is ReentrancyGuard {
