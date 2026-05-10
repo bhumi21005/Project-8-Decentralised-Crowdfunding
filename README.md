@@ -50,28 +50,29 @@ A decentralised crowdfunding platform built on Ethereum using Solidity smart con
 - **Security:** OpenZeppelin ReentrancyGuard
 - **Frontend:** HTML, CSS, JavaScript (ethers.js v6)
 - **Local Node:** Anvil (Foundry)
-
 ---
 
 ## Project Structure
 
 ```
 Crowd-Funding/
-├── src/
+├── contract/
 │   └── CrowdFunding.sol          # Main smart contract
 ├── test/
 │   └── CrowdFunding.t.sol        # Comprehensive test suite
-├── script/
+├── deploy_script/
 │   └── deploy.s.sol              # Foundry deployment script
 ├── frontend/
 │   ├── index.html                # DApp frontend
 │   ├── styles.css                # Premium dark-mode stylesheet
 │   └── app.js                    # Frontend application logic (ABI + MetaMask)
+├── reports/
+│   ├── gas-report.md             # gas optimization report
+│   └── coverage-report.txt       # coverage report
 ├── lib/
 │   ├── forge-std/                # Foundry standard library
 │   └── openzeppelin-contracts/   # OpenZeppelin contracts
 ├── foundry.toml                  # Foundry configuration
-├── gas-report.md                 # Gas optimisation report
 └── README.md                     # This file
 ```
 
