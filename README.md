@@ -128,7 +128,7 @@ forge script script/deploy.s.sol:DeployCrowdFunding \
     --broadcast
 ```
 
-> The private key above is the default Anvil account #0 (test only — never use in production).
+> The private key above is the default Anvil account #0 (test only).
 
 ### 5. Run the Frontend
 
