@@ -1,6 +1,6 @@
 # CrowdFund — Decentralised Crowdfunding DApp
 
-A decentralised crowdfunding platform built on Ethereum using Solidity smart contracts (Foundry) with a modern web frontend. Creators launch campaigns with funding goals and deadlines; backers contribute ETH; successful campaigns allow creator withdrawal, while failed campaigns enable contributor refunds — all on-chain, trustless, and transparent.
+A decentralised crowdfunding platform built on Ethereum using Solidity smart contracts (Foundry) with a modern web frontend. Creators launch campaigns with funding goals and deadlines; backers contribute ETH; successful campaigns allow creator withdrawal, while failed campaigns enable contributor refunds  all on-chain, trustless, and transparent.
 
 ---
 
