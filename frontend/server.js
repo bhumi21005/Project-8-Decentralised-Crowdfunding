@@ -67,6 +67,13 @@ function makeHttpsRequest(url, options, body = null) {
   });
 }
 
+// ─── Helper: Sanitise ID to prevent path traversal ───
+function sanitiseId(rawId) {
+  // Only allow hex (0x...), alphanumeric, hyphens, underscores, and dots
+  // Strip any path separators or traversal sequences
+  return rawId.replace(/[^a-zA-Z0-9_\-\.x]/g, '');
+}
+
 // ─── POST /api/upload — Save metadata to Pinata (or local fallback) ───
 app.post('/api/upload', async (req, res) => {
   const { id, data } = req.body;
@@ -75,7 +82,8 @@ app.post('/api/upload', async (req, res) => {
     return res.status(400).json({ error: 'Missing data field in request body.' });
   }
 
-  const localId = id || `campaign_${Date.now()}`;
+  const rawId = id || `campaign_${Date.now()}`;
+  const localId = sanitiseId(rawId);
   console.log(`[Server] Upload request for ID: ${localId}`);
 
   // 1. Try Pinata IPFS first
@@ -134,7 +142,10 @@ app.post('/api/upload', async (req, res) => {
 
 // ─── GET /api/ipfs/:id — Retrieve metadata (local first, then IPFS gateways) ───
 app.get('/api/ipfs/:id', async (req, res) => {
-  const { id } = req.params;
+  const id = sanitiseId(req.params.id);
+  if (!id) {
+    return res.status(400).json({ error: 'Invalid ID format.' });
+  }
   console.log(`[Server] Fetch request for ID: ${id}`);
 
   // 1. Try local filesystem first (exact filename match)
